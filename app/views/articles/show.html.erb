@@ -1,0 +1,23 @@
+<h1>Articles#show</h1>
+<p>Find me in app/views/articles/show.html.erb</p>
+
+<p>
+  <strong>Title:</strong>
+  <%= @article.title %>
+</p>
+ 
+<p>
+  <strong>Text:</strong>
+  <%= @article.body %>
+</p>
+
+
+<p>
+  <strong>Avatar:</strong>
+  <%#= image_tag @article.avatar.url %>
+  <%#= image_tag @user.avatar.url %>
+  <%= image_tag @article.avatar.url(:medium) %>
+  
+</p>
+
+<%= link_to 'Back', articles_path %>
